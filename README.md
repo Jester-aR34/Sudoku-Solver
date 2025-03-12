@@ -40,9 +40,9 @@ The bellow example shows the output for a given Sudoku problem that violated som
 
 ![alt text](ip-op_img/image-3.png)
 
-It shows 55 as null values as the given sudoku problem consists of 51 empty cells that would be solved by the algorithm.
+It shows 55 as null values as the given sudoku problem consists of 55 empty cells that would be solved by the algorithm.
 <br>
-If the given sudoku problem is valid and doesn’t violates any rule or logically solvable then the algorithm solves the sudoku problem and displays the solution array and solved sudoku grid.
+If the given sudoku problem is valid and doesn’t violates any rule and logically solvable then the algorithm solves the sudoku problem and displays the solution array and solved sudoku grid.
 
 ![alt text](ip-op_img/image-4.png)
 
