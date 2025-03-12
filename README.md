@@ -22,15 +22,15 @@ This program asks for an input for every individual element.
 
 <u>Example :</u>
 
-![alt text](image.png)
+![alt text](ip-op_img/image.png)
 
 After entering a value for the cell, the program displays the current state of the Sudoku grid. A dot ('.') represents a cell that requires input. If the entered value is 0, the cell remains empty and will be filled by the algorithm’s solution. If the entered value is between 1 and 9, it is fixed in the cell and will be used to complete the Sudoku grid. As shown below, the user entered 5 for cell R1C1 and 0 for cell R1C2
 
-![alt text](image-1.png)
+![alt text](ip-op_img/image-1.png)
 
 After providing a valid input for the algorithm, the program prompts the user for any changes to the Sudoku grid. It accepts 'yes' or 'no' as input. If you enter 'yes,' the program asks for the position of the cell you want to modify and the new value to update it. If you enter 'no,' the algorithm proceeds to solve the Sudoku grid.
 
-![alt text](image-2.png)
+![alt text](ip-op_img/image-2.png)
 
 ### Output:
 
@@ -38,9 +38,11 @@ If the given Sudoku problem violates any rules, the algorithm will not run, and 
 <br>
 The bellow example shows the output for a given Sudoku problem that violated some rules or the Sudoku problem that follows the rules but logically unsolvable:
 
-![alt text](image-3.png)
+![alt text](ip-op_img/image-3.png)
 
 It shows 55 as null values as the given sudoku problem consists of 51 empty cells that would be solved by the algorithm.
+<br>
 If the given sudoku problem is valid and doesn’t violates any rule or logically solvable then the algorithm solves the sudoku problem and displays the solution array and solved sudoku grid.
 
+![alt text](ip-op_img/image-4.png)
 
