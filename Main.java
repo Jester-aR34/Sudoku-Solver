@@ -168,6 +168,8 @@ public class Main
                     System.out.print(" | ");
                 if(a[i][j] == 0)
                     System.out.print(" ");
+                else if (a[i][j] < 0 ) 
+                    System.out.print(".");
                 else
                     System.out.print(a[i][j]);
             }
@@ -186,16 +188,16 @@ public class Main
         {
             for(int j = 0;j<9;j++)
             {
-                s[i][j] = 0;
+                s[i][j] = -1;
             }
         }
         //Instructions
         System.out.println("\nSudoku Solver !!!\n");
         System.out.println("Instructions :");
         System.out.println("-> Sudoku is played on a 9x9 grid divided into nine 3x3 subgrids.");
-        System.out.println("-> Row must contain the numbers 1 to 9 without repetition.");
-        System.out.println("-> Column must contain the numbers 1 to 9 without repetition.");
-        System.out.println("-> 3x3 subgrid must contain the numbers 1 to 9 without repetition.\n");
+        System.out.println("-> Each row must contain the digits 1 through 9 exactly once.");
+        System.out.println("-> Each column must contain the digits 1 through 9 exactly once.");
+        System.out.println("-> Each 3x3 box must contain the digits 1 through 9 exactly once. \n");
 
         System.out.println("Enter a valid problem to the Sudoku algo !!\n");
         //Initializing values of the sudoku problem
@@ -290,8 +292,6 @@ public class Main
             }
         }
         
-
-
         int[] solarr = SolvingMachine(s);
         
         if(solarr[solarr.length-1] == 0)    //The given problem is not Valid
@@ -301,8 +301,8 @@ public class Main
 
         else
         {
-            System.out.println("The last element of the array indicates the status: \n0 : Not Solved \n1 : Solved\n");
             System.out.println("length of Solution Array: "+ solarr.length+"\n");
+            System.out.println("The last element of the array indicates the status: \n0 : Not Solved \n1 : Solved\n");
             System.out.print("Solution Array : [ ");
             for (int i = 0; i < solarr.length; i++)
             {
